@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "caseNumber": "2",
+        "clientName": "asda",
+        "caseType": "asd",
+        "openDate": "1234-12-12",
+        "closeDate": "1244-12-12",
+        "fee": 1.2512412E7
+    }
+]

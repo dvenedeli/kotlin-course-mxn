@@ -1,0 +1,10 @@
+# Maven Central paths (repo1.maven.org/maven2/<path>)
+org/jetbrains/kotlin/kotlin-stdlib/1.9.24/kotlin-stdlib-1.9.24.jar
+org/jetbrains/kotlin/kotlin-reflect/1.9.24/kotlin-reflect-1.9.24.jar
+org/jetbrains/kotlin/kotlin-test/1.9.24/kotlin-test-1.9.24.jar
+org/jetbrains/kotlin/kotlin-test-junit5/1.9.24/kotlin-test-junit5-1.9.24.jar
+org/jetbrains/kotlinx/kotlinx-serialization-core-jvm/1.6.0/kotlinx-serialization-core-jvm-1.6.0.jar
+org/jetbrains/kotlinx/kotlinx-serialization-json-jvm/1.6.0/kotlinx-serialization-json-jvm-1.6.0.jar
+org/junit/platform/junit-platform-console-standalone/1.10.2/junit-platform-console-standalone-1.10.2.jar
+# Serialization compiler plugin (from Kotlin compiler distribution, not Maven embeddable)
+KOTLIN_DIST:kotlinc/lib/kotlinx-serialization-compiler-plugin.jar:kotlinx-serialization-compiler-plugin-1.9.24.jar
