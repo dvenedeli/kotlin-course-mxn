@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-set -euo pipefail
-cd "$(dirname "$0")"
-
 RUN_CP=""
 for jar in lib/*.jar; do
   base="$(basename "$jar")"

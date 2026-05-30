@@ -14,5 +14,5 @@ if [[ -x "tools/kotlin-1.9.24/bin/kotlinc" ]]; then
 fi
 
 echo "kotlinc not found. Install Kotlin 1.9.x and add it to PATH, or set KOTLIN_HOME." >&2
-echo "Optional: extract kotlin-compiler-1.9.24.zip to tools/kotlin-1.9.24/" >&2
+echo "Run scripts/download-deps.sh to install Kotlin compiler into tools/kotlin-1.9.24/" >&2
 return 1 2>/dev/null || exit 1

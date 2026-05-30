@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 set -euo pipefail
-cd "$(dirname "$0")"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+cd "$ROOT"
 
-./ensure-deps.sh
+"$SCRIPT_DIR/ensure-deps.sh"
 
-source ./find-kotlinc.sh
-source ./lib-classpath.sh
+source "$SCRIPT_DIR/find-kotlinc.sh"
+source "$SCRIPT_DIR/lib-classpath.sh"
 
 PLUGIN="lib/kotlinx-serialization-compiler-plugin-1.9.24.jar"
 OUT="build/classes"

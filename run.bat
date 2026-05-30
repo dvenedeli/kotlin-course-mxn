@@ -2,10 +2,10 @@
 setlocal EnableExtensions
 cd /d "%~dp0"
 
-call "%~dp0compile-main.bat"
+call "%~dp0scripts\compile-main.bat"
 if errorlevel 1 exit /b 1
 
-call "%~dp0lib-runtime-classpath.bat"
+call "%~dp0scripts\lib-runtime-classpath.bat"
 if errorlevel 1 exit /b 1
 
 set /p RUN_CP=<build\runtime-cp.txt

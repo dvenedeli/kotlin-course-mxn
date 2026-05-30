@@ -13,7 +13,8 @@
 | Путь | Назначение |
 |------|------------|
 | `deps.list` | Список зависимостей (Maven Central + plugin из дистрибутива Kotlin) |
-| `download-deps.bat` / `download-deps.sh` | Явная загрузка зависимостей в `lib/` |
+| `scripts/` | Сборка, classpath, загрузка зависимостей |
+| `download-deps.bat` / `download-deps.sh` | Обёртки → `scripts/download-deps.*` |
 | `lib/` | Скачанные JAR (не в git) |
 | `src/org/example/` | Точка входа `Main.kt` |
 | `test/org/example/` | Unit- и интеграционные тесты |

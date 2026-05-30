@@ -1,6 +1,7 @@
 @echo off
 setlocal EnableExtensions
-cd /d "%~dp0"
+set "ROOT=%~dp0.."
+cd /d "%ROOT%"
 
 if exist "lib\junit-platform-console-standalone-1.10.2.jar" if exist "lib\kotlinx-serialization-compiler-plugin-1.9.24.jar" exit /b 0
 

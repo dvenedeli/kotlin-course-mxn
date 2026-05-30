@@ -1,6 +1,6 @@
 # Downloads JAR dependencies listed in deps.list into lib/
 param(
-    [string]$ProjectRoot = $PSScriptRoot
+    [string]$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 )
 
 $ErrorActionPreference = 'Stop'

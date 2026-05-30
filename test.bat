@@ -2,13 +2,13 @@
 setlocal EnableExtensions
 cd /d "%~dp0"
 
-call "%~dp0compile-main.bat"
+call "%~dp0scripts\compile-main.bat"
 if errorlevel 1 exit /b 1
 
-call "%~dp0find-kotlinc.bat"
+call "%~dp0scripts\find-kotlinc.bat"
 if errorlevel 1 exit /b 1
 
-call "%~dp0lib-test-classpath.bat"
+call "%~dp0scripts\lib-test-classpath.bat"
 if errorlevel 1 exit /b 1
 
 set /p KOTLINC=<build\kotlinc.txt

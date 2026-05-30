@@ -2,10 +2,14 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-./compile-main.sh
+./scripts/compile-main.sh
 
-source ./find-kotlinc.sh
-source ./lib-test-classpath.sh
+SCRIPT_DIR="$(cd "$(dirname "$0")/scripts" && pwd)"
+ROOT="$(cd "$(dirname "$0")" && pwd)"
+cd "$ROOT"
+
+source "$SCRIPT_DIR/find-kotlinc.sh"
+source "$SCRIPT_DIR/lib-test-classpath.sh"
 
 PLUGIN="lib/kotlinx-serialization-compiler-plugin-1.9.24.jar"
 OUT="build/test-classes"
